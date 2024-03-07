@@ -10,7 +10,7 @@ Documentation for each script is in the header of the script itself.
 2. Add the checks to your Nagios configuration file `commands.conf`:
    ````
    object CheckCommand "check-s3-backups" {
-     command = [ PluginDir + "/check-s3-backups.py" ]
+     command = [ PluginDir + "/check_s3_backups.py" ]
      
      arguments = {
        "--bucketname" = {
